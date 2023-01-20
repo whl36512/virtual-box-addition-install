@@ -1,14 +1,6 @@
 # Virtualbox Guest Additions Installation
 
-Step 1: mount Guest Addition ISO after guest system is up
-- in the running guest
-- Top Menu -> Devices -> Insert Guest Additions CD Image
-- The ISO file will be downloaded automatically if it is not there.
-- Reboot the guest system
-
-if it reports error `VirtualBox Kernel Headers Not Found`, do step 2
-
-Step 2
+Step 1
 - Open a terminal in the guest system
 - `yum install kernel kernel-headers kernel-devel gcc`
 - `uname -r`  to find kernel version
@@ -16,3 +8,10 @@ Step 2
 - Optional: `/sbin/rcvboxadd cleanup`
 - `/sbin/rcvboxadd setup`  # this step may report a `ValueErroe`. Ignore it
 - `reboot`
+
+Step 2: mount Guest Addition ISO after guest system is up
+- in the running guest
+- Top Menu -> Devices -> Insert Guest Additions CD Image
+- The ISO file will be downloaded automatically if it is not there.
+- Reboot the guest system
+
