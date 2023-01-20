@@ -2,7 +2,7 @@
 
 Step 1
 - Open a terminal in the guest system
-- `yum install kernel kernel-headers kernel-devel gcc`
+- `yum install kernel kernel-headers kernel-devel gcc make perl`
 - `uname -r`  to find kernel version
 - `/sbin/rcvboxadd quicksetup 5.14.0-162.6.1.el9_1.0.1.x86_64`  <- this is the kernel version
 - Optional: `/sbin/rcvboxadd cleanup`
