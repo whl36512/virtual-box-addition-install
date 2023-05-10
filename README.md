@@ -1,4 +1,6 @@
 # Virtualbox Guest Additions Installation
+Set CPU to >=2 to avoid kernel panic when installing Linux
+
 
 Step 1
 - Open a terminal in the guest system
